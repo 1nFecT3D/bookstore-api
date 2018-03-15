@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events'
-import mockgoose from 'mockgoose'
+//import mockgoose from 'mockgoose'
 import mongoose from '../src/services/mongoose'
 import { mongo } from '../src/config'
 
@@ -23,7 +23,7 @@ global.parseInt = parseInt
 global.parseFloat = parseFloat
 
 beforeAll(async () => {
-  await mockgoose(mongoose)
+  //await mockgoose(mongoose)
   mongoose.connect(mongo.uri)
 })
 
